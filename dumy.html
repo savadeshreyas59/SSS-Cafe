@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSS Café</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">SSS Café</h1>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h2>Welcome to SSS Café ☕</h2>
+      <p>Fresh coffee, premium taste, cozy vibes. Your happy place!</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="section">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Cappuccino</h3>
+        <p>Rich espresso + milk foam</p>
+        <span>₹120</span>
+      </div>
+
+      <div class="card">
+        <h3>Cold Coffee</h3>
+        <p>Chilled coffee with cream</p>
+        <span>₹150</span>
+      </div>
+
+      <div class="card">
+        <h3>Chocolate Waffle</h3>
+        <p>Warm waffle with syrup</p>
+        <span>₹180</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALS -->
+  <section id="specials" class="section specials">
+    <h2 class="section-title">Today’s Specials ⭐</h2>
+
+    <div class="special-box">
+      <h3>SSS Signature Latte</h3>
+      <p>Exclusive café blend with vanilla aroma.</p>
+      <button class="btn" onclick="showSpecial()">Know More</button>
+
+      <p id="specialText" class="hidden">
+        🎉 Offer: Buy 1 Get 1 Free from 5 PM to 7 PM!
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-info">
+      <p><b>📍 Address:</b> SSS Café, Main Street, Pune</p>
+      <p><b>📞 Phone:</b> +91 98765 43210</p>
+      <p><b>📧 Email:</b> ssscafe@gmail.com</p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" onsubmit="return submitForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <p id="formResult"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 SSS Café | Made with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
